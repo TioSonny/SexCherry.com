@@ -1,163 +1,69 @@
-!DOCTYPE html
-html lang=pt-br
-head
-  meta charset=UTF-8
-  meta name=viewport content=width=device-width, initial-scale=1.0
-  titleSex Cherry - Loja de Produtos Eróticostitle
-  link href=httpsfonts.googleapis.comcss2family=Montserratwght@400;600&family=Poppinswght@300;400&display=swap rel=stylesheet
-  style
-     Estilos Básicos 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibrador XYZ - Sex Cherry</title>
+  <style>
     body {
-      font-family 'Poppins', sans-serif;
-      background-color #f4f4f4;
-      margin 0;
-      padding 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
     }
     header {
-      background-color #c72c48;
-      color white;
-      padding 20px;
-      text-align center;
+      background-color: #c72c48;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-    h1 {
-      font-family 'Montserrat', sans-serif;
+    .product-detail {
+      text-align: center;
+      padding: 20px;
     }
-    nav {
-      text-align center;
-      background-color #333;
-      padding 10px;
-    }
-    nav a {
-      color white;
-      margin 0 15px;
-      text-decoration none;
-    }
-    nav ahover {
-      text-decoration underline;
-    }
-    .container {
-      width 80%;
-      margin 0 auto;
-      padding 20px;
-    }
-    .category-section {
-      margin-bottom 40px;
-    }
-    .product-list {
-      display flex;
-      flex-wrap wrap;
-      justify-content space-around;
-    }
-    .product-card {
-      background-color white;
-      padding 15px;
-      margin 10px;
-      border-radius 8px;
-      box-shadow 0 4px 8px rgba(0, 0, 0, 0.1);
-      width 30%;
-      text-align center;
-    }
-    .product-card img {
-      width 100%;
-      height auto;
-      border-radius 8px;
+    .product-detail img {
+      width: 60%;
+      height: auto;
+      border-radius: 8px;
     }
     .product-name {
-      font-weight bold;
-      margin-top 10px;
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: 10px;
     }
     .product-price {
-      color #c72c48;
-      font-size 18px;
-      margin 10px 0;
+      color: #c72c48;
+      font-size: 20px;
+      margin: 10px 0;
     }
-    .add-to-cart {
-      background-color #c72c48;
-      color white;
-      border none;
-      padding 10px 20px;
-      cursor pointer;
-      border-radius 5px;
-      font-size 16px;
+    .product-description {
+      margin: 20px;
+      font-size: 16px;
     }
-    .add-to-carthover {
-      background-color #b22b3e;
+    .buy-now {
+      background-color: #c72c48;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
     }
-  style
-head
-body
+  </style>
+</head>
+<body>
 
-  !-- Cabeçalho --
-  header
-    h1Sex Cherry - Sua Loja de Prazerh1
-    pDescubra o melhor para o seu prazer e bem-estar íntimo!p
-  header
+  <header>
+    <h1>Sex Cherry - Detalhes do Produto</h1>
+  </header>
 
-  !-- Navegação --
-  nav
-    a href=#homeHomea
-    a href=#categoriesCategoriasa
-    a href=#contactContatoa
-  nav
+  <div class="product-detail">
+    <img src="imagens/produto1.jpg" alt="Vibrador XYZ">
+    <h2 class="product-name">Vibrador XYZ</h2>
+    <p class="product-price">R$ 99,99</p>
+    <p class="product-description">Este vibrador oferece múltiplas intensidades de vibração, ideal para momentos de prazer e intimidade. Feito com material de alta qualidade, é resistente e fácil de limpar.</p>
+    <button class="buy-now">Comprar Agora</button>
+  </div>
 
-  !-- Conteúdo Principal --
-  div class=container
-    !-- Categorias --
-    section id=categories class=category-section
-      h2Categoriash2
-      div class=product-list
-        div class=product-card
-          img src=vibrador.jpg alt=Vibrador
-          h3 class=product-nameVibradoresh3
-          p class=product-priceA partir de R$ 99,99p
-          a href=categoria-vibradores.html class=add-to-cartVer Produtosa
-        div
-        div class=product-card
-          img src=lingerie.jpg alt=Lingerie
-          h3 class=product-nameLingerie Sexyh3
-          p class=product-priceA partir de R$ 49,99p
-          a href=categoria-lingerie.html class=add-to-cartVer Produtosa
-        div
-        div class=product-card
-          img src=lubrificante.jpg alt=Lubrificante
-          h3 class=product-nameLubrificantesh3
-          p class=product-priceA partir de R$ 29,99p
-          a href=categoria-lubrificantes.html class=add-to-cartVer Produtosa
-        div
-      div
-    section
-
-    !-- Produtos --
-    section id=home class=product-list
-      h2Produtos em Destaqueh2
-      div class=product-card
-        img src=produto1.jpg alt=Produto 1
-        h3 class=product-nameVibrador XYZh3
-        p class=product-priceR$ 99,99p
-        button class=add-to-cart onclick=addToCart('Vibrador XYZ', 99.99)Adicionar ao Carrinhobutton
-      div
-      div class=product-card
-        img src=produto2.jpg alt=Produto 2
-        h3 class=product-nameLingerie Sensualh3
-        p class=product-priceR$ 49,99p
-        button class=add-to-cart onclick=addToCart('Lingerie Sensual', 49.99)Adicionar ao Carrinhobutton
-      div
-    section
-  div
-
-  !-- Rodapé --
-  footer style=text-aligncenter; padding 20px; background-color #333; color white;
-    p&copy; 2024 Sex Cherry - Todos os direitos reservadosp
-  footer
-
-  script
-    let cart = [];
-
-    function addToCart(productName, productPrice) {
-      cart.push({ name productName, price productPrice });
-      alert(`${productName} foi adicionado ao seu carrinho.`);
-    }
-  script
-  
-body
-html
+</body>
+</html>
